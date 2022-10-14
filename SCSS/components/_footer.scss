@@ -1,0 +1,137 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: linear-gradient(-30deg, #16213E, #0F3460, #16213E);
+}
+
+.footer__container {
+    border-top: .5rem solid #003347;
+    padding-top: 7rem;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    margin: 2rem;
+}
+
+.footer__head {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+.footer__btn {
+    width: 5rem;
+    height: 5rem;
+    border: .2rem solid #eb1034;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: #eb1034;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease;
+}
+
+.footer__btn:hover {
+    transform: translateY(-1rem);
+    border-color: #f96a67;
+}
+
+.aboutus__container p {
+    padding: 1rem 0 1rem 1rem;
+}
+
+.aboutus__container ul {
+    padding: 1rem 0 1rem 0;
+}
+
+.footer__container .sec h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer__container .sec h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #eb1034;
+}
+
+.footer__container .sec p {
+    color: #fff;
+}
+
+.navs__links {
+    position: relative;
+    padding:1rem;
+}
+
+.navs__links li a {
+    list-style: none;
+    text-decoration: none;
+    color: #f7f7f7;
+    margin-bottom: 10px;
+}
+
+.navs__links li a:hover {
+    color: #f96a67;
+}
+
+.contact__info {
+    position: relative;
+    padding:1rem;
+}
+
+.contact__info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+.contact__info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer__contact li a {
+    list-style: none;
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    footer {
+        padding: 40px;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__title {
+        font-size: 2.5rem;
+    }
+}
+
+/* ============= MEDIA QUERIES - PHONES ============= */
+
+@media screen and (max-width: 858px) {
+
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__title {
+        font-size: 2rem;
+    }
+}

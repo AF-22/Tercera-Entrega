@@ -1,0 +1,103 @@
+
+#contact {
+    margin-top: 8rem;
+}
+
+.container.contact__container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin-top: 2rem;
+}
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact__option{
+    background: linear-gradient(-30deg, #f96a67, #0F3460, #f96a67);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: #f96a67;
+}
+
+
+.contact__option h5 {
+    color: #f7f7f7;
+    align-items: flex-end;
+    justify-content:right;
+}
+
+.contact__option-icon{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.contact__option a{
+    font-size: .8rem;
+    display: inline-block;
+    margin-top: .7rem;
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: #f96a67;
+    padding: .75rem 1.2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    border: 1px solid #f96a67;
+    transition: all 400ms ease;
+}
+.btn:hover{
+    background: #f7f7f7;
+    color: #003347;
+    border-color: transparent;
+}
+.btn-primary{
+    background: #f96a67;
+    color: #003347;
+}
+
+/*=================FORM===============*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: 2px solid #eb1034;
+    resize: none;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+}
+
+/* ============= MEDIA QUERIES - PHONES ============= */
+
+@media screen and (max-width: 858px) {
+
+    .container.contact__container{
+        width: 100%;
+    }
+
+}

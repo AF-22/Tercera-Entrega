@@ -1,0 +1,90 @@
+
+#services {
+    margin: 2rem 0 8rem 0;
+}
+
+.services__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__container p {
+    width: 45rem;
+    padding-top: 1rem;
+}
+
+.gallery__services {
+    margin-top: 5rem;
+    height: 37rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.service {
+    border: .5rem solid #003347;
+    height: fit-content;
+    max-height: 36rem;
+    overflow: hidden;
+    transition: all 400ms ease;
+    filter: saturate(0) brightness(.5);
+}
+
+.service:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, .4);
+    filter: saturate(1) brightness(1);
+}
+
+.carousel-services {
+    width: 30%;
+    margin: 0 auto;
+    padding: 3rem 0 3rem 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    #services {
+        margin-top: 8rem;
+    }
+
+    .services__container p {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .gallery__services {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 100px;
+        grid-gap: 20px;
+    }
+
+    .carousel-services {
+        width: 60%;
+    }
+
+}
+
+/* ============= MEDIA QUERIES - PHONES ============= */
+
+@media screen and (max-width: 858px) {
+
+    #services {
+        margin-top: 6rem;
+    }
+
+    .services__container p {
+        margin-top: 1rem;
+    }
+
+    .gallery__services {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-services {
+        width: 60%;
+    }
+
+}
